@@ -15,7 +15,11 @@ class T9Dictionary {
     }
 
     getItem = (key) => {
-        if (key) return this.items[key];
+        if (key && this.items[key]) {
+            return this.items[key]
+        } else {
+            return [''];
+        };
     }
 }
 
