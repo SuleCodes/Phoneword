@@ -9,9 +9,9 @@ class T9Dictionary {
         this.items.push(['g', 'h', 'i'])
         this.items.push(['j', 'k', 'l'])
         this.items.push(['m', 'n', 'o'])
-        this.items.push(['p', 'q', 'r'])
-        this.items.push(['s', 't', 'u'])
-        this.items.push(['v', 'w', 'x'])
+        this.items.push(['p', 'q', 'r', 's'])
+        this.items.push(['t', 'u', 'v'])
+        this.items.push(['w', 'x', 'y', 'z'])
     }
 
     getItem = (key) => {

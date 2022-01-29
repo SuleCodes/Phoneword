@@ -1,6 +1,14 @@
 const express = require("express");
+const cors = require("cors");
+const corsOptions = {
+    origin: '*',
+    credentials: true,            //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
+}
 const PORT = process.env.PORT || 3001;
 const app = express();
+app.use(cors(corsOptions))
+
 var bodyParser = require('body-parser')
 var jsonParser = bodyParser.json()
 
